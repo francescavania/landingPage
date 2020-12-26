@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body,html{
+    background-color: #ebcacb;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: #413ad5 18px solid ;
+    padding: 40px;
+} */
+
+body,html{
+    background-color: #413ad5;
+}
+
+.container{
+    background-color: #ebcacb;
+    min-height: 720px;
+    margin: 18px;
+    padding: 20px 45px;
+}
+
+.container .navigation{
+    display: flex;
+    color :#413ad5;
+}
+
+.container .navigation .logo{
+    flex: 4;
+}
+.container .navigation .navBar{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .navigation .navBar a{
+    text-decoration: none;
+}
+
+.container .navigation .logo h1:hover{
+    cursor: pointer;
+}
+
+.container .navigation .navBar a:hover{
+    border-bottom: 2px black solid;
+}
+
+.active{
+    border-bottom: 2px black solid;
+}
+
+.container .mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+}
+
+.container .mainPage .imageHero #image{
+    width: 300px;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+
+}
+
+.container .mainPage .desc h1{
+    font-size: 70px;
+}
+
+.container .mainPage .desc p{
+    font-size: 30px;
+}
+
+.container .mainPage .imageHero p{
+    position: absolute;
+    right: 27%;
+    top:70%;
+    color: white;
+}
