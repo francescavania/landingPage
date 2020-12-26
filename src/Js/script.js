@@ -1,10 +1,9 @@
 const navBarElement = document.querySelectorAll(".navAction");
-const activeNav = document.querySelector('.navBar a.active');
 
 navBarElement.forEach(function(value,index){
     value.addEventListener("click",function(){
-        if (activeNav !== null) {
-            activeNav.classList.remove('active');
+        if (document.querySelector('.navBar a.active') !== null) {
+            document.querySelector('.navBar a.active').classList.remove('active');
           }
         value.classList.add("active");
     })
